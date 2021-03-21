@@ -1,12 +1,39 @@
-var favmovies=prompt("whats your fav movie?");
-
-if(favmovies==='tom and jerry'){
-    document.write('<img src="javaascript/pic/TomandJerryTitleCardc.jpg"/>');
-}else if(favmovies==='spongebob'){
-    document.write('<img src="javaascript/pic/piccc.jpg"/>');
-}else{
-    alert('get out of here');
+var favmovies=prompt("who's your fav actor?")
+while(favmovies !=='tom and jerry'&&favmovies!=='spongebob'){
+    favmovies=prompt('please pick tom and jerry or spongebob');
 }
+
+var movie='';
+var numberofmovies = prompt("how many pictures do you need to show up?")
+for(var i=0;i<numberofmovies;i++){
+
+    if(favmovies=='tom and jerry')
+    {
+        movie +='<img src="javaascript/pic/TomandJerryTitleCardc.jpg"/>';
+        
+        console.log(movie);
+    }
+
+else if(favmovies=='spongebob'){
+movie +='<img src="javaascript/pic/piccc.jpg"/>';
+}
+else{
+    alert('pick between tom and jerry or spongebob');
+}
+
+
+
+}
+document.write(movie);
+// var favmovies=prompt("whats your fav movie?");
+
+// if(favmovies==='tom and jerry'){
+//     document.write('<img src="javaascript/pic/TomandJerryTitleCardc.jpg"/>');
+// }else if(favmovies==='spongebob'){
+//     document.write('<img src="javaascript/pic/piccc.jpg"/>');
+// }else{
+//     alert('get out of here');
+// }
 
 var movies =confirm("do you likes movies?");
 
@@ -16,5 +43,12 @@ if(movies ==true){
 else{
         alert('get out of here');
     }
+
+var i=0;
+while(i<8)
+{
+    console.log('Hello to movies'+i);
+i++
+}
 
     
