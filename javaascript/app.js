@@ -25,17 +25,24 @@ else{
 
 }
 document.write(movie);
-// var favmovies=prompt("whats your fav movie?");
 
-// if(favmovies==='tom and jerry'){
-//     document.write('<img src="javaascript/pic/TomandJerryTitleCardc.jpg"/>');
-// }else if(favmovies==='spongebob'){
-//     document.write('<img src="javaascript/pic/piccc.jpg"/>');
-// }else{
-//     alert('get out of here');
-// }
+ var favmovies=prompt("whats your fav movie?");
+ function getfavmovie(param){
+
+ console.log(favmovies);
+
+ if(favmovies==='tom and jerry'){
+     document.write('<img src="javaascript/pic/TomandJerryTitleCardc.jpg"/>');
+     }else if(favmovies==='spongebob'){
+     document.write('<img src="javaascript/pic/piccc.jpg"/>');
+ }else{
+   alert('get out of here');
+ }}
+ getfavmovies(favmovies;)
+
 
 var movies =confirm("do you likes movies?");
+Function getfavmovie(param){
 
 if(movies ==true){
     alert('welcome to my website');
@@ -51,4 +58,18 @@ while(i<8)
 i++
 }
 
-    
+} getfavmovie(movie);
+
+
+
+var age=prompt("whats your age?");
+if(age>=18 && age<=35){
+    alert('welcome to the site');
+
+}else if(age<18 || age>35){
+    alert('sorry your not allowed');
+}else{
+    alert('please input a number');
+}
+}
+getage(age);
